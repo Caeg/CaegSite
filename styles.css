@@ -1,0 +1,36 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+    text-align: center;
+}
+
+
+h1{
+    color: blue;
+    size: 100px;
+}
+
+#allButtons{
+    posistion: absolute;
+    margin-top: 15%;
+    overflow:auto;
+}
+
+
+#langPic{
+    text-align: center;
+    padding: 0;
+}
+
+#toolPic{
+    text-align: center;
+    padding: 0;
+}
+
+h2.modalTitles{
+    text-align: center;
+}
