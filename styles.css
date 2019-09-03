@@ -1,13 +1,7 @@
 body {
     padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 14px 'Bree Serif', serif;
 }
-
-
-
-
-
-
 
 a {
     color: #00B7FF;
@@ -23,6 +17,24 @@ h1{
     font-size: 10px;
 }
 
+
+h2.modalTitles{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+h4{
+    font-family: 'Bree Serif', serif;
+}
+
+h5{
+    font-size: 10px;
+    padding-top: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
 #allButtons{
     posistion: absolute;
     margin-top: 15%;
@@ -30,58 +42,59 @@ h1{
 
 }
 
-
-
-#buttonLook{
-    border-radius: 5px;
-    background: white;
+p{
+    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
 }
+
 
 button:hover span {
         display:block;
         }
 
+
+.button{
+
+}
 .button:hover {
     background-color: #B73853;
     color: white;
-
-
+    transform: scale(0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*button1:hover:after {*/
-    /*border-radius: 0px 0px 5px 5px;*/
-    /*width:6em;*/
-    /*left: 10px;*/
 
-    /*text-alight: center;*/
-    /*content:"About me"}*/
+.button6{
+    postion: relative;
+    width:8em;
+    background-color: #646A7A;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    postion: fixed;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-family: 'Bree Serif', serif;
+}
 
-
-
-/*button2:hover:after {*/
-        /*position: absolute;*/
-        /*content:"Experience";*/
-
-        /*z-index: 99;*/
-
-/*}*/
-
-
-/*button3:hover:after {*/
-        /*position: absolute;*/
-        /*content:"Github"}*/
-
-/*button4:hover:after {*/
-    /*position: absolute;*/
-    /*content:"Linkedin"}*/
-
-/*button5:hover:after {*/
-    /*position: absolute;*/
-    /*content:"Resume"}*/
+.button6:hover {
+    background-color: #B73853;
+    color: white;
+    transform: scale(0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
-
-
+.tooltip {
+    font-family: 'Bree Serif', serif;
+}
 
 #langPic{
     text-align: center;
@@ -94,15 +107,16 @@ button:hover span {
     padding: 0;
 }
 
-h2.modalTitles{
-    text-align: center;
-}
 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.modal-title{
+    font-size: 40px;
+
+}
 
 .lang-cards{
     float: right;
@@ -110,16 +124,26 @@ body {
     position: relative;
     left: -1%; /* or right 50% */
     text-align: left;
+    border-radius: 10%;
 }
 
 .tool-cards{
     float: right;
-
     position: relative;
     left: -21%; /* or right 50% */
     text-align: left;
+
 }
 
+
+.extradeck{
+    float: right;
+    position: relative;
+    left: -45%; /* or right 50% */
+    text-align: left;
+
+
+}
 .flip-card {
     background-color: transparent;
     width: 150px;
@@ -127,6 +151,7 @@ body {
     perspective: 1000px;
     display:inline-block;
     padding-right: 10px;
+    border-radius: 10%;
 }
 
 .flip-card-inner {
@@ -137,10 +162,12 @@ body {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10%;
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    border-radius: 10%;
 }
 
 .flip-card-front, .flip-card-back {
@@ -148,41 +175,33 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    border-radius: 10%;
 }
 
 .flip-card-front {
     padding-top: 30%;
     background-color: #646A7A;
     color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
 }
 
 .flip-card-back {
     background-color: #B73853;
     color: white;
     transform: rotateY(180deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
 }
 
-#menu-container div{
-    height: 60px;
-    width: 60px;
-    border:1px solid #999;
-    background-color:#222;
-    color:#ccc;
-    left: 0;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    position: relative;
 
-
-}
 
 #menu-container div:hover{
     color:#fff;
     background-color:#333333;
     left: 20px;
     padding-left: -20px;
+    border-radius: 10%;
 }
 
 .button{
@@ -197,8 +216,105 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    postion: absoulte;
+    postion: fixed;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+    position: relative;
+    height: 200px; /*should be the same height as the images*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-comp-img img {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    border-radius: 50%;
+
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+
+#wrapper {
+    max-width: 600px;
+
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+#wrapper .img-comp-container{
+    width:600px;
+    height: 600px;
+    position:relative;
+    left:50%;
+    margin-left:-300px;
+}
+#wrapper img{
+    display:block;
+    margin: 2px auto;
+    border-radius: 2%;
+}
+
+#Selfie{
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;
+    top: 140px;
+
+}
+
+#fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 48.5%;
+
+}
+
+.pic{
+    top: 100px;
+}
+
+#morebutton {
+    position: absolute;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
