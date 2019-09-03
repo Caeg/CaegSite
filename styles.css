@@ -294,6 +294,12 @@ body {
 
 }
 
+#allButtons{
+    padding-top: 15%;
+
+
+}
+
 #fixedbutton {
     position: fixed;
     bottom: 0px;
